@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oristech.OrisRev2.Web", "Or
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oristech.OrisRev2.Services", "..\Oristech.OrisRev2.Services\Oristech.OrisRev2.Services\Oristech.OrisRev2.Services.csproj", "{5409B187-A28D-47A9-86FF-D21BA71362A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrisRev2.Client", "..\..\..\..\Documents\Visual Studio 2015\Projects\OrisRev2\OrisRev2.Client\OrisRev2.Client\OrisRev2.Client.csproj", "{376D66C2-2B80-4A73-B111-A7EF8A1C7D2E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{5409B187-A28D-47A9-86FF-D21BA71362A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5409B187-A28D-47A9-86FF-D21BA71362A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5409B187-A28D-47A9-86FF-D21BA71362A4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{376D66C2-2B80-4A73-B111-A7EF8A1C7D2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{376D66C2-2B80-4A73-B111-A7EF8A1C7D2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{376D66C2-2B80-4A73-B111-A7EF8A1C7D2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{376D66C2-2B80-4A73-B111-A7EF8A1C7D2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
