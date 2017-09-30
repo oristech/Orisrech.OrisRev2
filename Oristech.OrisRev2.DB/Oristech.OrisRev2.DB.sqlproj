@@ -100,6 +100,7 @@
     <Build Include="dbo\Tables\Case_Files.sql" />
     <Build Include="dbo\Tables\Additional_Testing.sql" />
     <Build Include="dbo\Stored Procedures\AddMedicalRecord.sql" />
+    <Build Include="dbo\Tables\Guidelines.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Snapshots\Oristech.OrisRev2.DB_20170930_00-09-12.dacpac" />
