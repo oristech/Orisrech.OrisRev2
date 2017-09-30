@@ -10,7 +10,7 @@ namespace Oristech.OrisRev2.Web.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Oristech.OrisRev2.Web";
 
             return View();
         }
