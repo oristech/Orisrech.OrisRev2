@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[MedicalRecords] (
+    [MRID]             INT            IDENTITY (1, 1) NOT NULL,
+    [Casenumber]       INT            NULL,
+    [UnSortedPages]    INT            NULL,
+    [SortedPages]      INT            NULL,
+    [Jurisdictation]   INT            NULL,
+    [PatientName]      VARCHAR (50)   NULL,
+    [IsRush]           BIT            NULL,
+    [CreatedDate]      DATETIME       NULL,
+    [Timereceived]     VARCHAR (50)   NULL,
+    [Timereturned]     VARCHAR (50)   NULL,
+    [lastModifiedDate] INT            NULL,
+    [Addedby]          NVARCHAR (128) NULL,
+    [CustomerID]       INT            NULL,
+    [SubAccountID]     INT            NULL,
+    [AssignedTo]       INT            NULL,
+    [TemplateId]       INT            NULL,
+    [Createdby]        NVARCHAR (128) NULL,
+    CONSTRAINT [PK__MedicalRecords__4CA06362] PRIMARY KEY CLUSTERED ([MRID] ASC),
+    CONSTRAINT [FK_MedicalRecords_Customer_SubAccount] FOREIGN KEY ([SubAccountID]) REFERENCES [dbo].[Customer_SubAccount] ([Id]),
+    CONSTRAINT [FK_MedicalRecords_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [dbo].[Customers] ([CustomerID]),
+    CONSTRAINT [FK_MedicalRecords_MedicalRecords] FOREIGN KEY ([Createdby]) REFERENCES [dbo].[AspNetUsers] ([Id]),
+    CONSTRAINT [FK_MedicalRecords_States] FOREIGN KEY ([Jurisdictation]) REFERENCES [dbo].[States] ([StateID]),
+    CONSTRAINT [FK_MedicalRecords_Templates] FOREIGN KEY ([TemplateId]) REFERENCES [dbo].[Templates] ([TemplateId])
+);
+
